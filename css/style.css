@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --h1: 45px;
+  --p-title: 18px;
+  --p-inner: 16px;
+  --p-small: 14px;
+  --color-yellow: #eaf602a1;
+  --color-white: white;
+  --colo-red: rgb(243, 68, 68);
+}
+.container-inner {
+  width: 400px;
+}
+.container-outer {
+  width: 600px;
+}
+
+.background {
+  width: 100%;
+  min-height: 800px;
+  background: linear-gradient(rgba(0, 0, 0, 0.204), rgba(0, 0, 0, 0.203)),
+    url("../images/christmas.jpg") no-repeat center center;
+  filter: brightness(5px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Layout */
+.background .form-layout {
+  width: 800px;
+  height: 800px;
+  background: linear-gradient(rgba(9, 9, 43, 0.7), rgba(7, 7, 36, 0.7));
+  position: absolute;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* header */
+#header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/* Form title  */
+.form-title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px dashed var(--color-yellow);
+}
+.form-title h1 {
+  font-size: var(--h1);
+  font-weight: bold;
+  color: var(--color-yellow);
+  padding: 30px 0 10px;
+  text-align: center;
+}
+.form-title p {
+  font-size: var(--p-title);
+  color: var(--color-white);
+  padding-bottom: 10px;
+  text-align: center;
+}
+/* main */
+#main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-information {
+  width: 100%;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+/* name row */
+.form-information .form-information-row {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: row;
+  padding-bottom: 10px;
+}
+.form-information .information-label {
+  display: inline-flex;
+  justify-content: left;
+  flex-grow: 40;
+  padding-top: 5px;
+  font-weight: bold;
+  color: var(--color-yellow);
+}
+.form-information .information-label span {
+  color: red;
+  font-size: 20px;
+}
+
+.form-information .information-input-boxes {
+  display: inline-block;
+}
+.form-information .information-input-boxes input {
+  padding: 7px 0;
+  background-color: transparent;
+  border: 2px solid var(--color-yellow);
+}
+
+.form-information-row {
+  margin-bottom: 15px;
+}
+
+/* Email */
+.form-information-row #email input {
+width: 350px;
+height: 33px;
+}
+/* phone */
+.form-information-row #phone input {
+  width: 114px;
+  height: 33px;
+  }
+
+  /* terms and conditions */
+
+.form-information-row .information-input-boxes {
+  font-size: var(--p-small);
+  color:var(--color-yellow);
+
+
+}
+.information-input-boxes{
+ justify-content: left;
+}
+
+/* Quantity */
+.information-input-boxes #terms input {
+  background-color: transparent;
+}
+
+/* Total price */
+.total-price-box {
+ width: 100%;
+  color: var(--color-white);
+  font-size: var(--p-small);
+  text-align: left;
+  margin-top: 20px;
+}
+.total-price-box .total-price-content{
+  width: 250px;
+  height: 75px;
+  background: linear-gradient(rgba(0, 0, 0, 0.453),rgba(0, 0, 0, 0.509));
+  padding-top: 20px;
+  padding-left: 5px;
+ 
+}
+.total-price-box .total-price-content p{
+  padding-bottom: 5px;
+}
+.total-price-box .total-price-content p:first-child{
+  border-bottom: 1px solid white;
+  font-size: var(--p-inner);
+}
+.total-price-box .total-price-content p:nth-child(2){
+ padding-top: 5px;
+  font-size: var(--p-small);
+}
+.total-price-box .total-price-content span{
+  padding-left: 150px;
+}
+
+.total-price-box .total-price-content #price{
+  padding-left: 180px;
+}
+/* button */
+.purchase-button input{
+  color: white;
+  background-color: rgba(221, 20, 20, 0.738);
+  height: 50px;
+  width: 250px;
+  border-radius: 3px;
+  border: transparent;
+  cursor: pointer;
+  font-size: var(--p-title);
+  text-align: center;
+  
+}
+.purchase-button {
+  margin-top: 25px;
+}

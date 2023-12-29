@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas Fundraising Dinner</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- Form Layout -->
+      <div class="form-layout">
+        <!-- header -->
+        <header id="header">
+          <!-- Form title -->
+          <div class="form-title">
+            <h1>Christmas Fundraising Dinner</h1>
+            <p>
+              Get your tickets for our annual fundraising. Hurry, we are in
+              short supply.
+            </p>
+          </div>
+        </header>
+
+        <!-- main -->
+        <main id="main">
+          <div class="form-information">
+            <div class="container-outer">
+              <!-- name row -->
+              <div class="form-information-row">
+                <div class="information-label">
+                  <label for="name" type="text">Name <span>*</span></label>
+                </div>
+                <div class="information-input-boxes">
+                  <div class="container-inner">
+                    <input type="text" />
+                    <input type="text" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- email row -->
+              <div class="form-information-row">
+                <div class="information-label" >
+                  <label for="email" type="text">Email<span>*</span></label>
+                </div>
+                <div class="information-input-boxes" id="email">
+                  <div class="container-inner">
+                    <input type="email" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- phone row -->
+              <div class="form-information-row">
+                <div class="information-label">
+                  <label for="phone" type="text">Phone <span>*</span></label>
+                </div>
+                <div class="information-input-boxes" id="phone">
+                  <div class="container-inner">
+                    <input type="text" />
+                    <input type="text" />
+                    <input type="text" />
+                  </div>
+                </div>
+              </div>
+
+             <!-- terms and conditions -->
+              <div class="form-information-row">
+                <div class="information-label" >
+                  <label for="terms" type="text">Terms<span>*</span></label>
+                </div>
+                <div class="information-input-boxes">
+                  <div class="container-inner">
+                    <input type="checkbox" id="terms"><span>  I accept the terms and conditions</span>
+                  </div>
+                </div>
+              </div>
+
+             <!-- Quantity -->
+             <div class="form-information-row">
+              <div class="information-label" >
+                <label for="quantity" type="text">Quantity<span>*</span></label>
+              </div>
+              <div class="information-input-boxes" id="terms">
+                <div class="container-inner">
+                  <input type="checkbox" ><span>  Dinner Ticket $30.00 USD</span>
+                  <br>
+                  <select name="ticket number" id="ticket">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                 </select>
+                 <!-- Total price -->
+          <div class="container-inner">
+            <div class="total-price-box">
+              <div class="total-price-content">
+                <p>Total<span> $30.00</span> </p>
+                <p>1<span id="price"> $30.00</span></p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <!-- button -->
+          <div class="container-inner">
+            <div class="purchase-button">
+              <input type="button" value="PURCHASE">
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
